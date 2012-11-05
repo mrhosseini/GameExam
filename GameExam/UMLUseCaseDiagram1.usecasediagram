@@ -342,6 +342,21 @@
         <elementDefinition Id="14207c3b-d2ec-4f67-96cb-5e9ab8b2aafe" />
       </useCase>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c6b7c746-72a5-481d-afcf-7d69b117e331" name="UseCase1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="58abbcfb-4e42-411d-ac6f-e23cb41fb73a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="3d6ce437-692a-4ca5-8cd4-dfc9d86f1ada" name="Artifact1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9800b76d-7a6d-4b40-99a2-b05d890527f5" />
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="968d7966-a181-4d75-b271-91fbe5428829" name="Actor1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="df3c5289-751b-4775-b877-8d0c55288906" />
+      </actor>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="a2cb530d-2788-4296-a4e5-62776b6970ab" name="GameExam">
     <elementDefinition Id="6515c809-709c-4f17-b5a0-cb403bcaf597" />
