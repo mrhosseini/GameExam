@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ba55c211-0622-4c68-b329-41c2e7433a8f" name="UMLUseCaseDiagram1" linkedPackageId="a2cb530d-2788-4296-a4e5-62776b6970ab" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="f13f0726-3a0a-483a-ae27-48c80473975f" name="Student" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="364f9762-5f5a-4ae8-9231-170110b963e6" />
+        <generalsInternal>
+          <generalization Id="b2281958-4cff-463f-bb56-e45cc1c09fb8" isSubstitutable="false">
+            <actorMoniker Id="2b2f2ce0-d15f-4d73-a86d-c2c4f964e6ea" LastKnownName="User" />
+            <elementDefinition Id="957e93a6-4d2a-4110-a293-2605e5545e6d" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="cc835440-bffd-4dbb-8854-33f7380a3607" isDerived="false" sourceEndRoleName="student" targetEndRoleName="Course Registration" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c5daa36e-d493-4529-bb16-4f5acc0ddf36" LastKnownName="Course Registration" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="75b90788-9d80-4b23-9f45-e105f039637a" name="student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8f70d9f9-07a1-42aa-ae9f-b4a19355add6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1cbcfcf7-c52c-4ce6-b4a5-bf2385a636ae" name="Course Registration" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8801de7b-73d5-4071-8963-c5c878f883d3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c6a17620-2550-41d8-a9df-f593d24feca5" />
+          </association>
+          <association Id="af47d60c-83b0-40ec-bd12-67b2c01d6c1e" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="Take Exam" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="64812074-a84e-4d9e-a4bb-6bb9c0076f8c" LastKnownName="Take Exam" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f5cc0206-375a-4d69-a421-3bcf3ccf8576" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1133b29e-471f-4bb5-8f6c-4b4396830840" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="72d21f21-9ec2-4f25-b614-ec256e008be4" name="Take Exam" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c6254c59-8c97-4a9a-a640-90b463fcf9e8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="92724401-46a1-4a0f-a561-3cc7a44fc92d" />
+          </association>
+          <association Id="4a275748-f69b-428f-81a5-da77f3664e7a" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="unenroll course" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="aea0b2a8-bfa5-45e8-8bdd-f0c706e07826" LastKnownName="unenroll course" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="37724881-87f6-4ac3-ae24-fd74ed575945" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cf0a70f0-d16b-454b-a1eb-2a420dc9e4f9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f6df8ef5-14e7-47d9-b463-e7fca885a948" name="unenroll course" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="140914e4-7600-4939-a1a1-beacd5ba5db0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e281cf14-0a5b-4e3d-9a56-dcae2d015d65" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="08b829d7-8873-4312-a62a-8b9f4bfb036e" name="Teacher" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aead2a40-e042-4c21-9065-d64c42479593" />
+        <generalsInternal>
+          <generalization Id="92166514-2cc7-4f5a-b91f-218550f0a5ce" isSubstitutable="false">
+            <actorMoniker Id="2b2f2ce0-d15f-4d73-a86d-c2c4f964e6ea" LastKnownName="User" />
+            <elementDefinition Id="134d8682-0c8e-4947-9f33-c9c80dcb95b2" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="aaefdbce-79f9-4da2-a72a-477ea0538be5" isDerived="false" sourceEndRoleName="Teacher" targetEndRoleName="Create Exam" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="37ab2afb-f95c-40a3-a0eb-86c0fbea230a" LastKnownName="Create Exam" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="59e665b8-7242-4bbb-b1d9-cedad70f42fb" name="Teacher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b92378fa-57f6-4aff-9d5b-1d9691cc5c53" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="91ea4f52-ca11-48fe-992b-d016d97f92f9" name="Create Exam" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4f01329e-b5c9-40c4-af02-60a28c6eccfd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7c517adb-3baf-4af7-b38c-9c9869ceb1c6" />
+          </association>
+          <association Id="45735b23-0497-41e4-8310-f55d3332a3ba" isDerived="false" sourceEndRoleName="Teacher" targetEndRoleName="Confirm Students" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3d03682d-9878-45ac-9eb6-a6b4ddd7eb00" LastKnownName="Confirm Students" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0ba41516-808b-4d72-a761-7248aad71d06" name="Teacher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="20a8dfac-4a7d-4f44-8a20-6665a19d20ea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="86c48931-a05d-4e24-9f13-0c9cc8db07ec" name="Confirm Students" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6020a4ae-3c41-47d5-8aab-225de9dc36ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f8b4d043-27fa-4c9a-8796-722e2188fa9c" />
+          </association>
+          <association Id="34085d7e-4f52-4c7a-ade3-a95f3adb5baf" isDerived="false" sourceEndRoleName="Teacher" targetEndRoleName="Manage Exam" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="51f504d6-ab8c-41b1-9554-64206c91fcf3" LastKnownName="Manage Exam" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="191e8433-4260-4f12-8613-3fefaa89ba6d" name="Teacher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5ce58541-0525-4c59-8282-84cb893f02e8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="515123b3-3b0f-4bb1-aace-79c0caa59a97" name="Manage Exam" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="16863400-0eb4-43e7-bad3-d00c6d32f93a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d30f9be2-e0d3-460b-81ee-de219b03cf05" />
+          </association>
+          <association Id="fdb9302a-58af-4631-a617-02084a7aeb08" isDerived="false" sourceEndRoleName="Teacher" targetEndRoleName="Create Course" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="58885d9e-d81f-4db4-97df-1f5894515141" LastKnownName="Create Course" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="189e3806-01d4-4d66-9e14-d6e53dcf2710" name="Teacher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0f2d6b15-5336-4af0-8c22-47a4b47326c8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd54daa8-eef1-426b-8445-b4adcdc74983" name="Create Course" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7cb26ee2-f709-4034-9ace-e148dc91fe71" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="26ddfd52-c4c3-45cc-8cbf-441a17ddabe2" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ee673714-d7e7-4976-bac5-e1392fceec08" name="Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0bfd7f1d-7b4d-4474-a677-0e50a81c7b15" />
+        <generalsInternal>
+          <generalization Id="ce15aa7c-f409-404f-94aa-88ade631a414" isSubstitutable="false">
+            <actorMoniker Id="2b2f2ce0-d15f-4d73-a86d-c2c4f964e6ea" LastKnownName="User" />
+            <elementDefinition Id="7e2725d0-d2ce-47d2-b696-7f421c2cbdf2" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="60805a26-e835-45ad-8c57-4cc6e172fdf2" isDerived="false" sourceEndRoleName="admin" targetEndRoleName="System Registration" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5ac9a23e-c243-46e1-9503-70f32d7775f9" LastKnownName="User Registation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7f695bb8-d66b-48a7-96d6-da9cbdc3a14a" name="admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2d58718b-6e59-4761-bd53-b46077382cd6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ba2d11b2-ca2a-40fa-9f66-35cbc5833249" name="System Registration" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aa8e3f69-df7f-4fda-a4d7-a11e10d4bd6a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3ecd4852-00fc-4141-9196-891160ea8134" />
+          </association>
+          <association Id="a1fbf7ec-7289-4d8c-a278-12796178500e" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Course List" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c4c38770-53b8-4688-8525-f01df123d72a" LastKnownName="Course List" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c4ae2490-bf30-4f7a-855a-d5244bae871a" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3722bed7-889f-4bce-acb5-39ca7f7b1532" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="539fc150-63a1-453e-adce-db4446bdad92" name="Course List" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="12ab2507-870e-4ae3-960e-cd13eb05873e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3a0a1b29-f0df-4df0-8a7b-5aa1004f8a74" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="867b61f6-7407-4bd0-b03d-9aa2821cff59" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="726e8a2d-16f3-4366-a129-37d5d91a117f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5ac9a23e-c243-46e1-9503-70f32d7775f9" name="User Registation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b2bb1eb9-e4d0-4aaa-8648-7b6e07265cdc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c5daa36e-d493-4529-bb16-4f5acc0ddf36" name="Course Registration" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9edf7b52-8d71-46fe-b7a9-69351479f403" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c17e697d-153c-489d-8673-13ee9c6ed6be" name="Teacher Registration" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e1d1cd05-b992-406e-b79c-13431e5b15d6" />
+        <extendedCases>
+          <extend Id="caa7e6a1-5d57-461b-9ca7-024960489fa9">
+            <useCaseMoniker Id="5ac9a23e-c243-46e1-9503-70f32d7775f9" LastKnownName="User Registation" />
+            <elementDefinition Id="ad2504e0-654c-4d3e-bd1a-d7ae09ba3d7e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e64b07a5-2d7a-431a-a6f2-50fd29a886bc" name="Student Registration" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4630324b-21f9-4df0-9322-1c2c8571d93a" />
+        <extendedCases>
+          <extend Id="94b225dd-e898-49aa-8139-e585de731eba">
+            <useCaseMoniker Id="5ac9a23e-c243-46e1-9503-70f32d7775f9" LastKnownName="User Registation" />
+            <elementDefinition Id="04a1d2b9-b3e7-4d54-bfd5-59c28e0cd317" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="2b2f2ce0-d15f-4d73-a86d-c2c4f964e6ea" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f52e393f-0ebd-4339-8973-84d870908429" />
+        <targetEnds>
+          <association Id="3b91f833-813e-4cb6-83cc-c84d27992a5e" isDerived="false" sourceEndRoleName="User" targetEndRoleName="View Profile" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="cbed8213-87e5-40c5-aa09-6b308a969c93" LastKnownName="View Profile" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fb1cb64d-cdd9-4021-af62-e2645f43286e" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="04d742e8-f2b1-42a1-8810-eed5b50131d3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bef25d34-17e9-4e91-8ea7-259208f2d000" name="View Profile" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aacde3ed-f2f8-4841-be02-5af1c88e24bf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5124f398-5211-458c-b073-668b8a865c1c" />
+          </association>
+          <association Id="a9a91514-17bc-4224-ba75-f1618b8bad52" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Edit Profile" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8619ef17-c3f1-4b6d-b0fb-5c29aa63a335" LastKnownName="Edit Profile" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b77738f8-a93b-478b-a60b-44b9f34561b7" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="018cde05-9dd6-4f63-b7e2-2d8f707c42d6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="377cb19a-7a89-4bdc-99c9-2a376dc36954" name="Edit Profile" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a224d593-8ca5-4b3d-b447-0fe33eb1e895" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2543422e-b141-48bb-a87f-5977b8e802c0" />
+          </association>
+          <association Id="f3a967d7-517d-4382-ac7b-75b9f7e0b433" isDerived="false" sourceEndRoleName="User" targetEndRoleName="View Dashboard" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e30b5489-cd9c-4b87-866a-e70de62ad0c9" LastKnownName="View Dashboard" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="40a7e37d-ff64-4153-b5b7-f58e98fdf10f" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="35bfb0b8-6b05-4032-93d3-3a0a6f4ae83e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f30a51c9-ab4c-4d0e-9d19-69a4b17eba63" name="View Dashboard" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5122331b-04b9-47be-a160-a1a48faf1fab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="afc5c0c8-a561-44a1-9a0a-83fe0bd03f8e" />
+          </association>
+          <association Id="3cb6edcb-dc64-40fd-a227-7e6c07bf43e8" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="867b61f6-7407-4bd0-b03d-9aa2821cff59" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="01fd2c46-5a53-4b04-9b9d-30950229a7e8" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="88bd3a75-243b-4820-9616-8a3672811263" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7dbe84eb-f9fa-473b-b4f9-a569f451ae07" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e261f402-4a41-4474-84c4-fa706e7e2809" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="42926c77-0a88-44fa-9bbe-09063e4ef517" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cbed8213-87e5-40c5-aa09-6b308a969c93" name="View Profile" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ff3862a6-4202-43cc-be1f-9a24f2e465cc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8619ef17-c3f1-4b6d-b0fb-5c29aa63a335" name="Edit Profile" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="59b80515-2d41-4105-a89d-8b22065a8367" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e30b5489-cd9c-4b87-866a-e70de62ad0c9" name="View Dashboard" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="51d62f99-ce9c-4b05-8d88-c03759efa4aa" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="58885d9e-d81f-4db4-97df-1f5894515141" name="Create Course" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="904ffb53-7fc8-4cea-a769-9acbf59ce3ed" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="37ab2afb-f95c-40a3-a0eb-86c0fbea230a" name="Create Exam" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="563a6fdc-1771-4e22-bd10-5d5c3c21bc2d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3d03682d-9878-45ac-9eb6-a6b4ddd7eb00" name="Confirm Students" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="29d74f26-2f34-4778-b437-87b0dc815929" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="64812074-a84e-4d9e-a4bb-6bb9c0076f8c" name="Take Exam" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="20aab81e-dd5c-451d-8311-134a67d80f62" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="51f504d6-ab8c-41b1-9554-64206c91fcf3" name="Manage Exam" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a3f249b6-009a-49e6-bfe0-370e2902fdab" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c4c38770-53b8-4688-8525-f01df123d72a" name="Course List" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6d08c1c7-17c8-4809-be8f-e083855b3f95" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="aea0b2a8-bfa5-45e8-8bdd-f0c706e07826" name="unenroll course" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="14207c3b-d2ec-4f67-96cb-5e9ab8b2aafe" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="a2cb530d-2788-4296-a4e5-62776b6970ab" name="GameExam">
+    <elementDefinition Id="6515c809-709c-4f17-b5a0-cb403bcaf597" />
+    <profileInstances>
+      <packageHasProfileInstances Id="719ec524-17af-4535-81fe-295f2affac5c">
+        <profileInstance Id="58127c50-13c7-475f-bf97-9d101622a2d9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="de105d17-ce0a-4b8f-a9ac-0a5e02870893">
+        <profileInstance Id="7808876e-da1f-41d3-9d4e-f250edd83b8a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
