@@ -1,0 +1,778 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="6515c809-709c-4f17-b5a0-cb403bcaf597"
+  name="GameExam" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="364f9762-5f5a-4ae8-9231-170110b963e6"
+        name="Student"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="957e93a6-4d2a-4110-a293-2605e5545e6d"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="f52e393f-0ebd-4339-8973-84d870908429"
+              LastKnownName="User"
+              LastKnownLocation="GameExam.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="c6a17620-2550-41d8-a9df-f593d24feca5"
+            isDerived="false"
+            sourceEndRoleName="student"
+            targetEndRoleName="Course Registration"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9edf7b52-8d71-46fe-b7a9-69351479f403"
+              LastKnownName="Course Registration"
+              LastKnownLocation="GameExam.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8f70d9f9-07a1-42aa-ae9f-b4a19355add6"
+                  name="student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8801de7b-73d5-4071-8963-c5c878f883d3"
+                  name="Course Registration"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="92724401-46a1-4a0f-a561-3cc7a44fc92d"
+            isDerived="false"
+            sourceEndRoleName="Student"
+            targetEndRoleName="Take Exam"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="20aab81e-dd5c-451d-8311-134a67d80f62"
+              LastKnownName="Take Exam"
+              LastKnownLocation="GameExam.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1133b29e-471f-4bb5-8f6c-4b4396830840"
+                  name="Student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c6254c59-8c97-4a9a-a640-90b463fcf9e8"
+                  name="Take Exam"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e281cf14-0a5b-4e3d-9a56-dcae2d015d65"
+            isDerived="false"
+            sourceEndRoleName="Student"
+            targetEndRoleName="unenroll course"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="14207c3b-d2ec-4f67-96cb-5e9ab8b2aafe"
+              LastKnownName="unenroll course"
+              LastKnownLocation="GameExam.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cf0a70f0-d16b-454b-a1eb-2a420dc9e4f9"
+                  name="Student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="140914e4-7600-4939-a1a1-beacd5ba5db0"
+                  name="unenroll course"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="aead2a40-e042-4c21-9065-d64c42479593"
+        name="Teacher"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="134d8682-0c8e-4947-9f33-c9c80dcb95b2"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="f52e393f-0ebd-4339-8973-84d870908429"
+              LastKnownName="User"
+              LastKnownLocation="GameExam.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="7c517adb-3baf-4af7-b38c-9c9869ceb1c6"
+            isDerived="false"
+            sourceEndRoleName="Teacher"
+            targetEndRoleName="Create Exam"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="563a6fdc-1771-4e22-bd10-5d5c3c21bc2d"
+              LastKnownName="Create Exam"
+              LastKnownLocation="GameExam.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b92378fa-57f6-4aff-9d5b-1d9691cc5c53"
+                  name="Teacher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4f01329e-b5c9-40c4-af02-60a28c6eccfd"
+                  name="Create Exam"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f8b4d043-27fa-4c9a-8796-722e2188fa9c"
+            isDerived="false"
+            sourceEndRoleName="Teacher"
+            targetEndRoleName="Confirm Students"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="29d74f26-2f34-4778-b437-87b0dc815929"
+              LastKnownName="Confirm Students"
+              LastKnownLocation="GameExam.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="20a8dfac-4a7d-4f44-8a20-6665a19d20ea"
+                  name="Teacher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6020a4ae-3c41-47d5-8aab-225de9dc36ab"
+                  name="Confirm Students"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d30f9be2-e0d3-460b-81ee-de219b03cf05"
+            isDerived="false"
+            sourceEndRoleName="Teacher"
+            targetEndRoleName="Manage Exam"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a3f249b6-009a-49e6-bfe0-370e2902fdab"
+              LastKnownName="Manage Exam"
+              LastKnownLocation="GameExam.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5ce58541-0525-4c59-8282-84cb893f02e8"
+                  name="Teacher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="16863400-0eb4-43e7-bad3-d00c6d32f93a"
+                  name="Manage Exam"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="26ddfd52-c4c3-45cc-8cbf-441a17ddabe2"
+            isDerived="false"
+            sourceEndRoleName="Teacher"
+            targetEndRoleName="Create Course"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="904ffb53-7fc8-4cea-a769-9acbf59ce3ed"
+              LastKnownName="Create Course"
+              LastKnownLocation="GameExam.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0f2d6b15-5336-4af0-8c22-47a4b47326c8"
+                  name="Teacher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7cb26ee2-f709-4034-9ace-e148dc91fe71"
+                  name="Create Course"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="0bfd7f1d-7b4d-4474-a677-0e50a81c7b15"
+        name="Admin"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="7e2725d0-d2ce-47d2-b696-7f421c2cbdf2"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="f52e393f-0ebd-4339-8973-84d870908429"
+              LastKnownName="User"
+              LastKnownLocation="GameExam.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="3ecd4852-00fc-4141-9196-891160ea8134"
+            isDerived="false"
+            sourceEndRoleName="admin"
+            targetEndRoleName="System Registration"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b2bb1eb9-e4d0-4aaa-8648-7b6e07265cdc"
+              LastKnownName="User Registation"
+              LastKnownLocation="GameExam.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2d58718b-6e59-4761-bd53-b46077382cd6"
+                  name="admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aa8e3f69-df7f-4fda-a4d7-a11e10d4bd6a"
+                  name="System Registration"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3a0a1b29-f0df-4df0-8a7b-5aa1004f8a74"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Course List"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6d08c1c7-17c8-4809-be8f-e083855b3f95"
+              LastKnownName="Course List"
+              LastKnownLocation="GameExam.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3722bed7-889f-4bce-acb5-39ca7f7b1532"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="12ab2507-870e-4ae3-960e-cd13eb05873e"
+                  name="Course List"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="726e8a2d-16f3-4366-a129-37d5d91a117f"
+        name="Login"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b2bb1eb9-e4d0-4aaa-8648-7b6e07265cdc"
+        name="User Registation"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9edf7b52-8d71-46fe-b7a9-69351479f403"
+        name="Course Registration"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e1d1cd05-b992-406e-b79c-13431e5b15d6"
+        name="Teacher Registration"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="ad2504e0-654c-4d3e-bd1a-d7ae09ba3d7e">
+            <useCaseMoniker
+              Id="b2bb1eb9-e4d0-4aaa-8648-7b6e07265cdc"
+              LastKnownName="User Registation"
+              LastKnownLocation="GameExam.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4630324b-21f9-4df0-9322-1c2c8571d93a"
+        name="Student Registration"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="04a1d2b9-b3e7-4d54-bfd5-59c28e0cd317">
+            <useCaseMoniker
+              Id="b2bb1eb9-e4d0-4aaa-8648-7b6e07265cdc"
+              LastKnownName="User Registation"
+              LastKnownLocation="GameExam.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f52e393f-0ebd-4339-8973-84d870908429"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="5124f398-5211-458c-b073-668b8a865c1c"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="View Profile"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ff3862a6-4202-43cc-be1f-9a24f2e465cc"
+              LastKnownName="View Profile"
+              LastKnownLocation="GameExam.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="04d742e8-f2b1-42a1-8810-eed5b50131d3"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aacde3ed-f2f8-4841-be02-5af1c88e24bf"
+                  name="View Profile"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2543422e-b141-48bb-a87f-5977b8e802c0"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Edit Profile"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="59b80515-2d41-4105-a89d-8b22065a8367"
+              LastKnownName="Edit Profile"
+              LastKnownLocation="GameExam.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="018cde05-9dd6-4f63-b7e2-2d8f707c42d6"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a224d593-8ca5-4b3d-b447-0fe33eb1e895"
+                  name="Edit Profile"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="afc5c0c8-a561-44a1-9a0a-83fe0bd03f8e"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="View Dashboard"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="51d62f99-ce9c-4b05-8d88-c03759efa4aa"
+              LastKnownName="View Dashboard"
+              LastKnownLocation="GameExam.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="35bfb0b8-6b05-4032-93d3-3a0a6f4ae83e"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5122331b-04b9-47be-a160-a1a48faf1fab"
+                  name="View Dashboard"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="42926c77-0a88-44fa-9bbe-09063e4ef517"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Login"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="726e8a2d-16f3-4366-a129-37d5d91a117f"
+              LastKnownName="Login"
+              LastKnownLocation="GameExam.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="88bd3a75-243b-4820-9616-8a3672811263"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e261f402-4a41-4474-84c4-fa706e7e2809"
+                  name="Login"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ff3862a6-4202-43cc-be1f-9a24f2e465cc"
+        name="View Profile"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="59b80515-2d41-4105-a89d-8b22065a8367"
+        name="Edit Profile"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="51d62f99-ce9c-4b05-8d88-c03759efa4aa"
+        name="View Dashboard"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="904ffb53-7fc8-4cea-a769-9acbf59ce3ed"
+        name="Create Course"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="3a4a1061-f003-47e8-825c-05da62bda653">
+            <useCaseMoniker
+              Id="c0ae8bc9-9279-43c3-9d46-125f2977adac"
+              LastKnownName="Assign Teacher to Course"
+              LastKnownLocation="GameExam.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="31194cf1-1271-42d2-b3d7-4273e4bedd28"
+        name="Change Password"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f9f25794-0ead-407e-9cd6-eaf5066facbc">
+            <useCaseMoniker
+              Id="59b80515-2d41-4105-a89d-8b22065a8367"
+              LastKnownName="Edit Profile"
+              LastKnownLocation="GameExam.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c0ae8bc9-9279-43c3-9d46-125f2977adac"
+        name="Assign Teacher to Course"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="563a6fdc-1771-4e22-bd10-5d5c3c21bc2d"
+        name="Create Exam"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="29d74f26-2f34-4778-b437-87b0dc815929"
+        name="Confirm Students"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="20aab81e-dd5c-451d-8311-134a67d80f62"
+        name="Take Exam"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a3f249b6-009a-49e6-bfe0-370e2902fdab"
+        name="Manage Exam"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6d08c1c7-17c8-4809-be8f-e083855b3f95"
+        name="Course List"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="14207c3b-d2ec-4f67-96cb-5e9ab8b2aafe"
+        name="unenroll course"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
